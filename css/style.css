@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryColor:#53ffab;
+    --secondaryColor:#313a49;
+    --bgColor:#202632;
+    --lettersColor:#cee3e8;
+}
+
+body {
+    background: var(--bgColor);
+    width: 1005;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+}
+
+.card {
+    background: var(--secondaryColor);
+    width: 500px;
+    position: relative;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+#adviceNum {
+    text-transform: uppercase;
+    color: var(--primaryColor);
+    font-size: .8rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+#advice {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--lettersColor);
+    margin: 1.3rem 0;
+    text-align: center;
+}
+
+button {
+    background: var(--primaryColor);
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -30px;
+    transition: .3s;
+}
+
+button:hover {
+    box-shadow: 0px 0px 30px 0px rgba(83,255,171,1);
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 30px;
+    color: var(--lettersColor);
+}
+
+.attribution a {
+    color: var(--primaryColor);
+}
